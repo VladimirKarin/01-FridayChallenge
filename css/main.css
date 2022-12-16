@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --narrowWidth: 100px;
+  --fullWidth: 206px;
+  --logoWidth: 70px;
+  --bodyBackground: ##EBEEF5;
+  --navBackground: #F7F6FF;
+  --elementColor: #C4C4C4;
+  --hoverColor: #02577A;
+  --hoverBackground: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--bodyBackground)
+}
+
+
+nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: var(--navBackground);
+  width: var(--narrowWidth);
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+  width: var(--logoWidth);
+  height: 35px;
+  text-align: center;
+  transition: all 0.5 ease;
+  border-bottom: 3px solid black;
+  padding-bottom: 0;
+  margin: 35% 12.5% 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+a {
+  position: relative;
+  color: var(--elementColor);
+  font-size: 16px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+
+}
+
+.fa-solid {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 15px;
+}
+
+a:hover {
+  background: var(--hoverBackground);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  color: var(--hoverColor);
+}
+
+nav:hover {
+  width: var(--fullWidth);
+  transition: all 0.75s ease;
+}
